@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         String nombreUsuario = et1.getText().toString();
 
         if (nombreUsuario.equals("")) {
-            Toast.makeText(this, "Debes de intruducir el nombre de usuario", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Debes de intruducir el nombre de usuario.", Toast.LENGTH_SHORT).show();
         } else {
             Intent intent = new Intent(this, CalcularActivity.class);
             intent.putExtra("nombreUsuario", nombreUsuario);
