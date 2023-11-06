@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -12,18 +13,43 @@ public class MainActivity extends AppCompatActivity {
     private EditText et1, et2;
     private TextView tv1;
     private RadioButton r1, r2, r3, r4;
+
+    private Button botonCal, botonLimp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1 = findViewById(R.id.et1);
-        et2 = findViewById(R.id.et2);
-        tv1 = findViewById(R.id.TV1);
-        r1 = findViewById(R.id.rb1);
-        r2 = findViewById(R.id.rb2);
-        r3 = findViewById(R.id.rb3);
-        r4 = findViewById(R.id.rb4);
+        //EditTexts
+        et1 = (EditText) findViewById(R.id.et1);
+        et2 = (EditText) findViewById(R.id.et2);
+
+        //TextsView
+        tv1 = (TextView) findViewById(R.id.TV1);
+
+        //RadioButtons
+        r1 = (RadioButton) findViewById(R.id.rb1);
+        r2 = (RadioButton) findViewById(R.id.rb2);
+        r3 = (RadioButton) findViewById(R.id.rb3);
+        r4 = (RadioButton) findViewById(R.id.rb4);
+
+        //Botones
+        botonCal = (Button) findViewById(R.id.bt1);
+        botonLimp = (Button) findViewById(R.id.bt2);
+
+        botonCal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                calcular(v);
+            }
+        });
+
+        botonLimp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                limpiar(v);
+            }
+        });
     }
 
     public void  limpiar(View v)
