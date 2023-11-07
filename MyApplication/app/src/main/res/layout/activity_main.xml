@@ -53,25 +53,25 @@
             android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SUMAR" />
+            android:text="@string/suma" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RESTAR" />
+            android:text="@string/resta" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MULTIPLICAR" />
+            android:text="@string/multiplicacion" />
 
         <RadioButton
             android:id="@+id/rb4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DIVIDIR" />
+            android:text="@string/division" />
     </RadioGroup>
 
     <Button
@@ -79,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="309dp"
-        android:text="CALCULAR"
+        android:text="@string/calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:onClick="limpiar"
-        android:text="LIMPIAR"
+        android:text="@string/eliminar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt1" />
