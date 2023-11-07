@@ -4,32 +4,78 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2;
     private TextView tv1;
     private RadioButton r1, r2, r3, r4;
+
+    private Button botonCal, botonLimp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1 = findViewById(R.id.et1);
-        et2 = findViewById(R.id.et2);
-        tv1 = findViewById(R.id.TV1);
-        r1 = findViewById(R.id.rb1);
-        r2 = findViewById(R.id.rb2);
-        r3 = findViewById(R.id.rb3);
-        r4 = findViewById(R.id.rb4);
+        //EditTexts
+        et1 = (EditText) findViewById(R.id.et1);
+        et2 = (EditText) findViewById(R.id.et2);
+
+        //TextsView
+        tv1 = (TextView) findViewById(R.id.TV1);
+
+        //RadioButtons
+        r1 = (RadioButton) findViewById(R.id.rb1);
+        r2 = (RadioButton) findViewById(R.id.rb2);
+        r3 = (RadioButton) findViewById(R.id.rb3);
+        r4 = (RadioButton) findViewById(R.id.rb4);
+
+        r1.setChecked(true);
+
+
+        //Botones
+        botonCal = (Button) findViewById(R.id.bt1);
+        botonLimp = (Button) findViewById(R.id.bt2);
+
+        botonCal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                comprobar(v);
+            }
+        });
+
+        botonLimp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                limpiar(v);
+            }
+        });
     }
 
     public void  limpiar(View v)
     {
         tv1.setText("EL RESULTADO ES: ");
+        et1.setText("");
+        et2.setText("");
 
+        et1.requestFocus();
+
+    }
+
+    public void comprobar(View v){
+        String val1 = et1.getText().toString();
+        String val2 = et2.getText().toString();
+        String mensaje = "Debe de introducir los valores correspondientes";
+
+        if (val1.isEmpty()||val2.isEmpty()){
+            Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+        }else {
+            calcular(v);
+        }
     }
 
     public void calcular(View v)

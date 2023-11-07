@@ -1,0 +1,48 @@
+<resources>
+    <!-- Titles -->
+    <string name="app_name">My Application</string>
+    <string name="app_title">Application Title</string>
+    
+    <!-- Main Menu -->
+    <string name="Arrancar">Play</string>
+    <string name="Configurar">Settings</string>
+    <string name="Acercade">About</string>
+    <string name="Salir">Exit</string>
+    
+    <!-- Form and Authentication -->
+    <string name="nombre_usuario">Username</string>
+    <string name="contrasena">Password</string>
+    <string name="iniciar_sesion">Log In</string>
+    
+    <!-- Mathematical Operations -->
+    <string name="calcular">Calculate</string>
+    <string name="suma">Add</string>
+    <string name="resta">Subtract</string>
+    <string name="multiplicacion">Multiply</string>
+    <string name="division">Divide</string>
+    
+    <!-- General Actions -->
+    <string name="guardar">Save</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">Accept</string>
+    <string name="rechazar">Reject</string>
+    <string name="editar">Edit</string>
+    <string name="eliminar">Delete</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cerrar_sesion">Log Out</string>
+    <string name="ajustes">Settings</string>
+    <string name="ayuda">Help</string>
+    <string name="idioma">Language</string>
+    
+    <!-- Numeric Operations -->
+    <string name="numero">Number</string>
+    <string name="resultado">Result</string>
+    <string name="total">Total</string>
+    <string name="numero_entero">Integer</string>
+    <string name="decimal">Decimal</string>
+    <string name="ingrese_numero">Enter a number</string>
+    <string name="calcular_total">Calculate Total</string>
+    <string name="promedio">Average</string>
+    <string name="maximo">Maximum</string>
+    <string name="minimo">Minimum</string>
+</resources>

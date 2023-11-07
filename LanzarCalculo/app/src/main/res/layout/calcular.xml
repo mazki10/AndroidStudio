@@ -9,46 +9,43 @@
         android:id="@+id/en1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
+        android:layout_marginTop="106dp"
         android:ems="10"
         android:hint="Numero"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
-        android:layout_marginBottom="469dp"
+        android:layout_marginTop="63dp"
         android:onClick="multiplicar"
         android:text="Multiplicar X2"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/en1"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/en1" />
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginBottom="22dp"
         android:text="Resulado : "
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/en1" />
 
     <TextView
         android:id="@+id/tv2"
         android:layout_width="54dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="44dp"
+        android:layout_height="19dp"
         app:layout_constraintBottom_toTopOf="@+id/en1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
 </androidx.constraintlayout.widget.ConstraintLayout>

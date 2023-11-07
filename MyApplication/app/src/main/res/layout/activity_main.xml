@@ -38,7 +38,7 @@
         android:text="EL RESLTADO ES:  "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/bt1"
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
@@ -75,18 +75,17 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="309dp"
-        android:onClick="calcular"
         android:text="CALCULAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bt2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -94,6 +93,6 @@
         android:text="LIMPIAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
