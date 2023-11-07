@@ -1,0 +1,71 @@
+<resources>
+    <!-- Títulos -->
+    <string name="app_name">AndroidBeniat</string>
+    <string name="tituloAplicacion">Título de la Aplicación</string>
+
+    <!-- Menú principal -->
+    <string name="Arrancar">Jugar</string>
+    <string name="Configurar">Configurar</string>
+    <string name="Acercade">Acerca de</string>
+    <string name="Salir">Salir</string>
+
+    <!-- Formulario y Autenticación -->
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+
+    <!-- Operaciones Matemáticas -->
+    <string name="calcular">Calcular</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+
+    <!-- Acciones Generales -->
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="rechazar">Rechazar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="idioma">Idioma</string>
+
+    <!-- Operaciones Numéricas -->
+    <string name="numero">Número</string>
+    <string name="resultado">Resultado</string>
+    <string name="total">Total</string>
+    <string name="numero_entero">Número Entero</string>
+    <string name="decimal">Decimal</string>
+    <string name="ingrese_numero">Ingrese un número</string>
+    <string name="calcular_total">Calcular Total</string>
+    <string name="promedio">Promedio</string>
+    <string name="maximo">Máximo</string>
+    <string name="minimo">Mínimo</string>
+
+    <!-- Botones de Acción -->
+    <string name="guardar_cambios">Guardar Cambios</string>
+    <string name="compartir">Compartir</string>
+    <string name="enviar">Enviar</string>
+    <string name="buscar">Buscar</string>
+
+    <!-- Menús y Navegación -->
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Perfil</string>
+    <string name="configuracion">Configuración</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="solicitudAyuda">Solicutud AYUDA</string>
+    <string name="datosPersonales">Datos Personales:</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">"Apellido "</string>
+    <string name="anioNacimiento">Año de Nacimiento</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="opcion1">Sin Hijos</string>
+    <string name="opcion2">Un Hijo</string>
+    <string name="opcion3">2 o más hijos</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="resolucion">Resolucion</string>
+    <string name="numHijos">Número de Hijos:</string>
+</resources>
