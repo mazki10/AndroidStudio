@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2, et3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             int val2 = Integer.parseInt(et2.getText().toString());
             int val3 = Integer.parseInt(et3.getText().toString());
 
-            int[] lista = new int[] {val1, val2, val3};
+            int[] lista = new int[]{val1, val2, val3};
 
             int val4 = lista[0];
 

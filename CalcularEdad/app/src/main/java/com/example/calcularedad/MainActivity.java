@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(this, "Error a la hora de escribir el formate de fecha.", Toast.LENGTH_SHORT).show();
             Toast.makeText(this, "Intente con el formato dd/MM/aaaa", Toast.LENGTH_SHORT).show();
-            // Maneja cualquier error si la fecha en el TextView no es válida
         }
     }
 }
