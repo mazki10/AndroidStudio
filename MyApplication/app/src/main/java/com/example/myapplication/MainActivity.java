@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         r3 = (RadioButton) findViewById(R.id.rb3);
         r4 = (RadioButton) findViewById(R.id.rb4);
 
+        r1.setChecked(true);
+
+
         //Botones
         botonCal = (Button) findViewById(R.id.bt1);
         botonLimp = (Button) findViewById(R.id.bt2);
@@ -40,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         botonCal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                calcular(v);
+                comprobar(v);
             }
         });
 
@@ -55,7 +59,23 @@ public class MainActivity extends AppCompatActivity {
     public void  limpiar(View v)
     {
         tv1.setText("EL RESULTADO ES: ");
+        et1.setText("");
+        et2.setText("");
 
+        et1.requestFocus();
+
+    }
+
+    public void comprobar(View v){
+        String val1 = et1.getText().toString();
+        String val2 = et2.getText().toString();
+        String mensaje = "Debe de introducir los valores correspondientes";
+
+        if (val1.isEmpty()||val2.isEmpty()){
+            Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+        }else {
+            calcular(v);
+        }
     }
 
     public void calcular(View v)
