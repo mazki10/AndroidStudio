@@ -56,4 +56,7 @@
     <string name="perfil">Perfil</string>
     <string name="configuracion">Configuración</string>
     <string name="ayuda">Ayuda</string>
+    <string name="numero1">Inserte el primer valor</string>
+    <string name="numero2">Inserte el segundo valor</string>
+    <string name="resultadoEs">"El resultado es: "</string>
 </resources>
