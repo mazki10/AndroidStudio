@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2, et3;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,5 +43,4 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Error: Ingresa valores numéricos en todos los campos", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
