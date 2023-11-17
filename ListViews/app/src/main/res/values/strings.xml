@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ListViews</string>
+
+    <string-array name="valores_array">
+            <item>PUTA</item>
+            <item>PETA</item>
+            <item>PUTO</item>
+            <item>PATA</item>
+            <item>PATO</item>
+            <item>PITO</item>
+            <item>PITA</item>
+            <item>PATO</item>
+    </string-array>
+
+</resources>
