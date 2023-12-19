@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        limpiar(v);
+
                     }
                 });
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        limpiar(v);
+                        aNum.setText("");
                     }
                 });
 
@@ -104,14 +104,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void comprobarEdad(View v) {
         String anio = aNum.getText().toString();
-
-        if (TextUtils.isEmpty(anio)) {
-            dialogAnio(v);
-            return;
-        }
-
-        int year = Calendar.getInstance().get(Calendar.YEAR);
         int anioInt = Integer.parseInt(anio);
+        int year = Calendar.getInstance().get(Calendar.YEAR);
 
         if (anioInt < 1900 || anioInt > year) {
             dialogAnio(v);
@@ -119,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             int edad = calcularEdad(anioInt);
             if (edad < 18 || edad > 65) {
                 Toast.makeText(this, "No cumples con los requisitos mínimos de edad", Toast.LENGTH_SHORT).show();
-                limpiar(v);
+                aNum.setText("");
             } else {
                 pasa(v);
             }

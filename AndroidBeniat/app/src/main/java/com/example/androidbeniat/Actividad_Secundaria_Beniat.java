@@ -21,9 +21,7 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
 
     private RadioGroup gru;
 
-    String nombre;
-    String ape1;
-    String ape2;
+    String nombre, ape1, ape2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,11 +71,7 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
     public void limpiar(View v) {
 
         ing.setText("");
-
-        snHi.clearFocus();
-        unHi.clearFocus();
-        maHi.clearFocus();
-
+        gru.clearCheck();
     }
 
     public boolean evaluarSolicitud(int numerosHijos, Double ingresoAnual) {
@@ -115,9 +109,7 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
                 .setMessage("ERROR: Debe rellenar todos los campos")
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        limpiar(v);
-                    }
+                    public void onClick(DialogInterface dialogInterface, int i) {}
                 });
 
         AlertDialog dialog = builder.create();
@@ -126,7 +118,6 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
 
     public void mostrarSolicitud(View v) {
         Double ingresos = Double.parseDouble(ing.getText().toString());
-        Boolean a;
         int hijos = 0;
 
         if (unHi.isChecked()) {
