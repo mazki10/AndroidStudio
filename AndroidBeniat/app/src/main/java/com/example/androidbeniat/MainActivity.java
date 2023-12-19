@@ -103,8 +103,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void comprobarEdad(View v) {
-        String anio = aNum.getText().toString();
-        int anioInt = Integer.parseInt(anio);
+        int anioInt = Integer.parseInt(aNum.getText().toString());
         int year = Calendar.getInstance().get(Calendar.YEAR);
 
         if (anioInt < 1900 || anioInt > year) {
