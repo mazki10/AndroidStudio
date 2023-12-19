@@ -1,9 +1,11 @@
-       <RadioButton
-        android:id="@+id/radioButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Opción 1"
-        android:checked="true"/> <!-- Este botón estará marcado por defecto -->
+    
+    //poner un radio buttom activo por defecto
+    <RadioButton
+     android:id="@+id/radioButton1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Opción 1"
+     android:checked="true"/> <!-- Este botón estará marcado por defecto -->
 
 
     //verificacion de radio buttoms
