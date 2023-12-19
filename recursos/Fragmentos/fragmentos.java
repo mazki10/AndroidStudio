@@ -9,7 +9,7 @@
 
 
     //verificacion de radio buttoms
-    int selectedRadioButtonId = gru.getCheckedRadioButtonId();
+    int selectedRadioButtonId = gru.getCheckedRadioButtonId(); //detectar que radio buttom está pulsado
     selectedRadioButtonId == -1 //para comprobar si no se a pulsado ningun radio buttom
     gru.clearCheck(); //para limpiar todos los radio buttoms de un radio group
 
@@ -46,9 +46,10 @@
         intent.putExtra("Nombre", dato);//pasar datos a la actividad
 
         startActivity(intent);//lanzar la actividad
-
-        datoRecojido = intent.getStringExtra("Nombre");//recojer datos
     }
+    
+        Intent intent = getIntent();
+        datoRecojido = intent.getStringExtra("Nombre");//recojer datos
 
 
     //dialogo

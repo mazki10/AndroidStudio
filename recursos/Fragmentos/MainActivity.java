@@ -130,9 +130,11 @@ public class MainActivity extends AppCompatActivity {
         String ape2 = aPe2.getText().toString();
 
         Intent intent = new Intent(this, Actividad_Secundaria_Beniat.class);
+        
         intent.putExtra("Nombre", nombre);
         intent.putExtra("Apellido1", ape1);
         intent.putExtra("Apellido2", ape2);
+
         startActivity(intent);
     }
 }

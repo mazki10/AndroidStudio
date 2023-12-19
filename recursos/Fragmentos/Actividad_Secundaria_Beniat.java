@@ -78,11 +78,11 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
 
         Boolean aceptado = false;
 
-        if (ingresoAnual < 9000) {
+        if (ingresoAnual <= 9000) {
             aceptado = true;
-        } else if (ingresoAnual >= 9001 && ingresoAnual <= 20000 && numerosHijos >= 1) {
+        } else if (ingresoAnual >= 9000 && ingresoAnual <= 20000 && numerosHijos >= 1) {
             aceptado = true;
-        } else if (ingresoAnual >= 20001 && ingresoAnual <= 30000 && numerosHijos > 1) {
+        } else if (ingresoAnual > 20000 && ingresoAnual <= 30000 && numerosHijos > 1) {
             aceptado = true;
         }
 
@@ -93,7 +93,6 @@ public class Actividad_Secundaria_Beniat extends AppCompatActivity {
 
         String ingresos = ing.getText().toString();
         int selectedRadioButtonId = gru.getCheckedRadioButtonId();
-
 
         if (TextUtils.isEmpty(ingresos) || selectedRadioButtonId == -1) {
             dialogRellenar(v);

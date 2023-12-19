@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecuAndroidBeinat</string>
+    <string name="becas">BECAS</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="apellido">APELLIDO</string>
+    <string name="nacimiento">AÑO DE NACIMIENTO</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="finalizar">FINALIZAR</string>
+    <string name="familia">FAMILIA NUMEROSA</string>
+    <string name="reso">RESOLUCION</string>
+    <string name="volver">VOLVER</string>
+    <string name="no">NO</string>
+    <string name="si">SI</string>
+    <string name="ingresos">INGRESOS ANUALES</string>
+    <string name="datos">DATOS PERSONALES</string>
+</resources>

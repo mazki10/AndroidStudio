@@ -1,9 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidBeniat" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.AndroidBeniat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
+        <item name="colorAccent">#FF4081</item>
+
+        <!-- Typography -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#CCCCCC</item>
+
+        <!-- ActionBar Style -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Other attributes -->
+        <!-- ... -->
     </style>
 
     <style name="Theme.AndroidBeniat" parent="Base.Theme.AndroidBeniat" />
+
+    <!-- ActionBar Style -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">#FF5722</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>
